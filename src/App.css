@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App h2 {
+  color: darkblue;
+  text-decoration: underline;
+}
+.App Form {
+  max-width: 300px;
+  text-align: center;
+  padding: 25px 10px;
+}
+.App StudentSection {
+  width: 100%;
+}
+.App Form input,
+.App Form button {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid dodgerblue;
+}
+.App Form input {
+  border-radius: 5px 0 0 5px;
+}
+.App Form input:focus {
+  border: 1px solid yellowgreen;
+}
+.App Form button {
+  color: whitesmoke;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  background-color: dodgerblue;
+}
+.App Form button:hover {
+  background-color: rgb(19, 111, 202);
+  border-color: rgb(19, 111, 202);
+}
+.student-section {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+.all-students,
+.present-students,
+.absent-students {
+  text-align: center;
+  flex: 1;
+  padding: 2px;
+}
+.all-students {
+  color: black;
+}
+.present-students {
+  color: rgb(8, 148, 50);
+}
+.absent-students {
+  color: rgb(185, 15, 15);
+}
+.all-students ol {
+  border: 1px solid black;
+  color: black;
+}
+.present-students ol {
+  border: 1px solid rgb(8, 148, 50);
+  color: rgb(8, 148, 50);
+}
+.absent-students ol {
+  border: 1px solid rgb(185, 15, 15);
+  color: rgb(185, 15, 15);
+}
+.all-students h4,
+.present-students h4,
+.absent-students h4 {
+  border: 1px solid grey;
+  border-bottom: none;
+  padding: 5px 0;
+  border-radius: 10px 10px 0 0;
+}
+.all-students ol,
+.present-students ol,
+.absent-students ol {
+  border-radius: 0 0 5px 5px;
+  text-align: left;
+  list-style-position: inside;
+  padding: 0 5px;
+  padding-top: 4px;
+  min-height: 20px;
+}
+.all-students ol li,
+.present-students ol li,
+.absent-students ol li {
+  position: relative;
+  padding-bottom: 8px;
+}
+.all-students ol li input,
+.present-students ol li input,
+.absent-students ol li input {
+  margin-right: 5px;
+}
+.all-students ol li span:last-of-type,
+.present-students ol li span:last-of-type,
+.absent-students ol li span:last-of-type {
+  position: absolute;
+  right: 0;
+}
+.all-students ol li span:first-of-type,
+.present-students ol li span:first-of-type,
+.absent-students ol li span:first-of-type {
+  text-transform: capitalize;
+}
+.all-students ol li span button:not(:last-child),
+.present-students ol li span button:not(:last-child),
+.absent-students ol li span button:not(:last-child) {
+  margin-right: 2px;
+}
+.all-students ol li span button,
+.present-students ol li span button,
+.absent-students ol li span button {
+  padding: 2px;
+}
